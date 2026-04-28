@@ -1,7 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.0.0/schema.json",
   "pageOrder": [
-    "SamplePage_001"
+    "Chapter_Page_001",
+    "Chapter_Page_002",
+    "Chapter_Page_003",
+    "Chapter_Page_004"
   ],
-  "activePageName": "SamplePage_001"
+  "activePageName": "Chapter_Page_001"
 }
