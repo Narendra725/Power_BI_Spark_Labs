@@ -1,0 +1,2101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "db7c6f2c32ca9657e4f2",
+  "position": {
+    "x": 45.266009852216747,
+    "y": 722.99876847290636,
+    "z": 9000,
+    "height": 271.5960591133005,
+    "width": 1617.0024630541873,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Stores"
+                    }
+                  },
+                  "Property": "Store Region"
+                }
+              },
+              "queryRef": "Stores.Store Region",
+              "nativeQueryRef": "Region",
+              "active": true,
+              "displayName": "Region"
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product"
+                    }
+                  },
+                  "Property": "Item Division"
+                }
+              },
+              "queryRef": "Product.Item Division",
+              "nativeQueryRef": "Division",
+              "active": true,
+              "displayName": "Division"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attribute Field Parameter"
+                    }
+                  },
+                  "Property": "Attributes"
+                }
+              },
+              "index": 0,
+              "length": 1
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Revenue Growth"
+                }
+              },
+              "queryRef": "Measures Table.% Revenue Growth",
+              "nativeQueryRef": "% Revenue Growth"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measures Table"
+                  }
+                },
+                "Property": "% Revenue Growth"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tabular'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "repeatRowHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "steppedLayoutIndentation": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showExpandCollapseButtons": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "urlIcon": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "valuesOnRow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bandedRowHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Revenue Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#21A544'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Revenue Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E01F29'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Revenue Growth"
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "titleAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Auto'"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "206.02685816068612D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'RIYADH'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "177.23860615917658D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOUTH'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "164.24836180105D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'MAKKAH'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "206.4025358158642D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'MADINAH'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "213.86428364059907D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'JED'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "176.93960819610263D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'EAST'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.7186420356648D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'DC FULFILMENT'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "47D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "null"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Stores"
+                          }
+                        },
+                        "Property": "Store Region"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'DUBAI'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "137D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Online Orders.ECOMM Order Type"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "167.9789743598455D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Item Division"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "263D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Item Department"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "240.01723024755165D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Item Main Category"
+          }
+        }
+      ],
+      "blankRows": [
+        {
+          "properties": {
+            "showBlankRows": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Revenue Growth"
+          }
+        }
+      ],
+      "columnTotal": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Daily'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "spacing": [
+        {
+          "properties": {
+            "verticalSpacing": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "customizeSpacing": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "spaceBelowTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3f160251d34fdad2a50c",
+        "ordinal": 0,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "% Revenue Growth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "73dd63222541c57670a0",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Area Manager Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "5b4b5160233c7634f853",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Attribute Field Parameter"
+              }
+            },
+            "Property": "Attributes"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Attribute Field Parameter",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "a"
+                          }
+                        },
+                        "Property": "Attributes Fields"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Division]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Department]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Main Category]'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              },
+              "Annotations": {
+                "filterExpressionMetadata": {
+                  "expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Attribute Field Parameter"
+                          }
+                        },
+                        "Property": "Attributes"
+                      }
+                    }
+                  ],
+                  "decomposedIdentities": {
+                    "values": [
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Division]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Department]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Main Category]'"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    ],
+                    "columns": [
+                      {
+                        "value": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Attribute Field Parameter"
+                              }
+                            },
+                            "Property": "Attributes Fields"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "valueMap": [
+                    {
+                      "0": "Division"
+                    },
+                    {
+                      "0": "Department"
+                    },
+                    {
+                      "0": "Category"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "2f6275af7b3bc5a11e51",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Business Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "bfaeef453b61d447c07a",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Date"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "bd73cdfc53fc7346de61",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Main Category"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "84addfcd60aff301c32f",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Main Class"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "f2e3b0e13628599dd572",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Created On Date"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "7ff2c856ca05376866b8",
+        "ordinal": 8,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Created on Month"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "953ba2ac9eca3e38bff5",
+        "ordinal": 9,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Created On Year"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "c34fec5b0ab1353ec1c6",
+        "ordinal": 10,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Department"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "3c910cc241157cba61f4",
+        "ordinal": 11,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Division"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "p",
+              "Entity": "Product",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "p"
+                              }
+                            },
+                            "Property": "Item Division"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "37604e5cd1f4a814947e",
+        "ordinal": 12,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Dominant PH City"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "8a520c7d2233add1e33e",
+        "ordinal": 13,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Dominant Region"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "4b5af31d09c1f7da9f3d",
+        "ordinal": 14,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Dominant Store Code"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "2d88c2b5dd15296ac052",
+        "ordinal": 15,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Online Orders"
+              }
+            },
+            "Property": "ECOMM Channel Source"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "aa047217887de18e5ad4",
+        "ordinal": 16,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Online Orders"
+              }
+            },
+            "Property": "ECOMM Order Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "efc09f90de3300cb765e",
+        "ordinal": 17,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Sex MF Code"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "8ec4eafa0add17c0e942",
+        "ordinal": 18,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Insurance"
+              }
+            },
+            "Property": "Insurance Availed"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "332d5d4275dc6fd97329",
+        "ordinal": 19,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Brand"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "900b30a2b90ec668814a",
+        "ordinal": 20,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item ID Description"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "964ef421e2def76185a4",
+        "ordinal": 21,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Segment"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "843a2fcab09d57ef26eb",
+        "ordinal": 22,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "3eaf35e6fd0b734ac86c",
+        "ordinal": 23,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Loyalty Class"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "3511516aa2a25a1ed02f",
+        "ordinal": 24,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Guest City"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "86f2b0151eb35821a3c3",
+        "ordinal": 25,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Member Region"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "5bc09626efef98364d9d",
+        "ordinal": 26,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Guest Status Code"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "9df8d8bd1aee6eb3d84a",
+        "ordinal": 27,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Guest"
+              }
+            },
+            "Property": "Guest Store No"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "ba112b6397a85d13fbab",
+        "ordinal": 28,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Date"
+              }
+            },
+            "Property": "Fiscal Period"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "f10e0cd154475d0f20d9",
+        "ordinal": 29,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "UAE Marketplace"
+              }
+            },
+            "Property": "UAE Captain Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "1ba0e6deacc0acf45001",
+        "ordinal": 30,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Pharmacist"
+              }
+            },
+            "Property": "Pharmacist Desc"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "5008531d7ec27b55d96a",
+        "ordinal": 31,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Private or Brand"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "43e0e7a2b659c90bc41c",
+        "ordinal": 32,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Adday Basket Points Source"
+              }
+            },
+            "Property": "Is Provider"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "8a23d0fcd55990074859",
+        "ordinal": 33,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Date"
+              }
+            },
+            "Property": "Quarter ID"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "8608830014151250ba07",
+        "ordinal": 34,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store Region"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Stores",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "Store Region"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'NA'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "c2c524a05e2a3ac40cf0",
+        "ordinal": 35,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "2eae7568169c9c8af52d",
+        "ordinal": 36,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store Code"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "3d482114d368b379172c",
+        "ordinal": 37,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store Status"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "b2b11b377a0996a2df16",
+        "ordinal": 38,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Sales L2L"
+              }
+            },
+            "Property": "Store Type Class"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "894f0e2cf05800f8327b",
+        "ordinal": 39,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Sales L2L"
+              }
+            },
+            "Property": "Store Type Subclass"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "c012a1649b962780938e",
+        "ordinal": 40,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Subcategory"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "cb184afa6f3e9841902a",
+        "ordinal": 41,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Subclass"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "798504c6e0f5b50c193b",
+        "ordinal": 42,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Supervisor Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "d47c67edd184a9ac7761",
+        "ordinal": 43,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Date"
+              }
+            },
+            "Property": "Week ID"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "36bd11fdd5f477fb196a",
+        "ordinal": 44,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Attribute Field Parameter"
+              }
+            },
+            "Property": "Attributes"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "5131de329172c414636c",
+        "ordinal": 45,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Date"
+              }
+            },
+            "Property": "Year"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "52373c6ad53fb5b0fae0",
+        "ordinal": 46,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Zone Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

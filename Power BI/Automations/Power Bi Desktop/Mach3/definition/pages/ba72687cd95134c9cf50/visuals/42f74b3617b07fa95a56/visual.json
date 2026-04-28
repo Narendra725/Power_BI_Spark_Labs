@@ -1,0 +1,1527 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "42f74b3617b07fa95a56",
+  "position": {
+    "x": 49.03817733990148,
+    "y": 692.82142857142856,
+    "z": 12000,
+    "height": 282.91256157635468,
+    "width": 1581.7955665024631,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product"
+                    }
+                  },
+                  "Property": "Item Division"
+                }
+              },
+              "queryRef": "Product.Item Division",
+              "nativeQueryRef": "Division",
+              "active": true,
+              "displayName": "Division"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attribute Field Parameter"
+                    }
+                  },
+                  "Property": "Attributes"
+                }
+              },
+              "index": 0,
+              "length": 1
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ Revenue (Private & Imported)"
+                }
+              },
+              "queryRef": "Measures Table.$ Revenue (Private & Imported)",
+              "nativeQueryRef": "$ Revenue",
+              "displayName": "$ Revenue"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ Private Label Sales Target (Target Category)"
+                }
+              },
+              "queryRef": "Measures Table.$ Private Label Sales Target (Target Category)",
+              "nativeQueryRef": "$ Target1",
+              "displayName": "$ Target"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Private Label Revenue Achievement"
+                }
+              },
+              "queryRef": "Measures Table.% Private Label Revenue Achievement",
+              "nativeQueryRef": "% Revenue Ach.",
+              "displayName": "% Revenue Ach."
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Revenue Contribution (Private & Imported)"
+                }
+              },
+              "queryRef": "Measures Table.% Revenue Contribution (Private & Imported)",
+              "nativeQueryRef": "% Revenue Cont.1",
+              "displayName": "% Revenue Cont."
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Revenue Growth (Private & Imported)"
+                }
+              },
+              "queryRef": "Measures Table.% Revenue Growth (Private & Imported)",
+              "nativeQueryRef": "% Revenue Growth",
+              "displayName": "% Revenue Growth"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Private Label Revenue Achievement"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Revenue Growth (Private & Imported)"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Private Label Revenue Achievement"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "1D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#21A544'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "And": {
+                              "Left": {
+                                "Comparison": {
+                                  "ComparisonKind": 2,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "Measures Table"
+                                        }
+                                      },
+                                      "Property": "% Private Label Revenue Achievement"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "0.95D"
+                                    }
+                                  }
+                                }
+                              },
+                              "Right": {
+                                "Comparison": {
+                                  "ComparisonKind": 3,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "Measures Table"
+                                        }
+                                      },
+                                      "Property": "% Private Label Revenue Achievement"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "1D"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#F28A24'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Private Label Revenue Achievement"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0.95D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E01F29'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Private Label Revenue Achievement"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Revenue Growth (Private & Imported)"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#21A544'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Revenue Growth (Private & Imported)"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E01F29'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Revenue Growth (Private & Imported)"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Revenue Contribution (Private & Imported)"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Revenue Contribution (Private & Imported)"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "titleAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAECF0'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "121.00000022911095D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ LY Revenue"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "119.72587381188131D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Ach (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "118D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Target (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "284.5304956500008D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Item Division"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "206.00000006326198D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Insurance.Insurance Availed"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "201.17951859147075D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Stores.Store Region"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "210D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Item Department"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "201D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Item Main Category"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "266.4372138841421D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Revenue (Private & Imported)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "238.984052263051D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Revenue Growth (Private & Imported)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "240.04720908511223D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Private Label Revenue Achievement"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "224.39093055894884D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Private Label Sales Target (Target Category)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "232.05884615747817D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Revenue Contribution (Private & Imported)"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ LY Revenue"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Ach (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Target (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Revenue (Private & Imported)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Private Label Revenue Achievement"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Revenue Growth (Private & Imported)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Revenue Contribution (Private & Imported)"
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tabular'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "showExpandCollapseButtons": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "expandCollapseButtonsSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Row"
+          }
+        }
+      ],
+      "columnTotal": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowTotal": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Transactions'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filter89a4f1f19b74aade583e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Attribute Field Parameter"
+              }
+            },
+            "Property": "Attributes"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Attribute Field Parameter",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "a"
+                          }
+                        },
+                        "Property": "Attributes Fields"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Division]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Stores''[Store Region]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Insurance''[Insurance Availed]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Private or Brand]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Online Shipment Type''[Omni Type]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Department]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Main Category]'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              },
+              "Annotations": {
+                "filterExpressionMetadata": {
+                  "expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Attribute Field Parameter"
+                          }
+                        },
+                        "Property": "Attributes"
+                      }
+                    }
+                  ],
+                  "decomposedIdentities": {
+                    "values": [
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Division]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Stores''[Store Region]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Insurance''[Insurance Availed]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Private or Brand]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Online Shipment Type''[Omni Type]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Department]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Main Category]'"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    ],
+                    "columns": [
+                      {
+                        "value": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Attribute Field Parameter"
+                              }
+                            },
+                            "Property": "Attributes Fields"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "valueMap": [
+                    {
+                      "0": "Division"
+                    },
+                    {
+                      "0": "Region"
+                    },
+                    {
+                      "0": "Ins/Non Ins"
+                    },
+                    {
+                      "0": "Private Or Brand"
+                    },
+                    {
+                      "0": "Omni Type"
+                    },
+                    {
+                      "0": "Department"
+                    },
+                    {
+                      "0": "Category"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isLockedInViewMode": true
+      },
+      {
+        "name": "1ac5957b893153e8b95e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Division"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "p",
+              "Entity": "Product",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "p"
+                              }
+                            },
+                            "Property": "Item Division"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "839e46f1e69e5b159269",
+  "displayName": "S&OP Achievement",
+  "displayOption": "FitToPage",
+  "height": 1021,
+  "width": 1900,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "afdf80f07120bdd664e7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Country Global"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Stores",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Country Global"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Global'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'KSA'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "b1309df11cb58ca50600",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "border": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "backgroundColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F5F7'"
+                  }
+                }
+              }
+            }
+          },
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "221L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "49846eef3b3bb161e650",
+      "target": "bcc422ae233dc88c150b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "49846eef3b3bb161e650",
+      "target": "8149d8b09a15a69420a2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "bcc422ae233dc88c150b",
+      "target": "49846eef3b3bb161e650",
+      "type": "NoFilter"
+    },
+    {
+      "source": "bcc422ae233dc88c150b",
+      "target": "687de02f2430040d3d97",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7c732bcc17807a0b043b",
+      "target": "e81e41ec100241b2259f",
+      "type": "NoFilter"
+    }
+  ]
+}

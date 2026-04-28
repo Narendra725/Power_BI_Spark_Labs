@@ -1,0 +1,183 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "5651b42885dd973cd079",
+  "position": {
+    "x": 544.2211055276382,
+    "y": 235.51088777219428,
+    "z": 37000,
+    "height": 308.71021775544386,
+    "width": 299.16247906197651,
+    "tabOrder": 33004
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Insurance"
+                    }
+                  },
+                  "Property": "Insurance Payer"
+                }
+              },
+              "queryRef": "Insurance.Insurance Payer",
+              "nativeQueryRef": "Insurance Payer",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            },
+            "isInvertedSelectionMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "selfFilter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "i",
+                    "Entity": "Insurance",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Contains": {
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "i"
+                              }
+                            },
+                            "Property": "Insurance Payer"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "'was'"
+                          }
+                        }
+                      }
+                    },
+                    "Annotations": {
+                      "PowerBI.MParameterBehavior": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'WASFATY Hidden filter'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2c681378870050635002",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Hidden Filters"
+              }
+            },
+            "Property": "Filters"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      }
+    ]
+  },
+  "isHidden": true
+}

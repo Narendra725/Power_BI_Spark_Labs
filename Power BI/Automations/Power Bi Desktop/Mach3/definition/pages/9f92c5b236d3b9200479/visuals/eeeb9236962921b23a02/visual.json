@@ -1,0 +1,2083 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "eeeb9236962921b23a02",
+  "position": {
+    "x": 44.008620689655174,
+    "y": 743.11699507389164,
+    "z": 29000,
+    "height": 218.78571428571428,
+    "width": 1622.0320197044334,
+    "tabOrder": 27000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product"
+                    }
+                  },
+                  "Property": "Item Division"
+                }
+              },
+              "queryRef": "Product.Item Division",
+              "nativeQueryRef": "Division",
+              "active": true,
+              "displayName": "Division"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attribute Field Parameter"
+                    }
+                  },
+                  "Property": "Attributes"
+                }
+              },
+              "index": 0,
+              "length": 1
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ Revenue"
+                }
+              },
+              "queryRef": "Measures Table.$ Revenue",
+              "nativeQueryRef": "$ Revenue"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ LY Revenue"
+                }
+              },
+              "queryRef": "Measures Table.$ LY Revenue",
+              "nativeQueryRef": "$ LY Revenue"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Revenue Growth"
+                }
+              },
+              "queryRef": "Measures Table.% Revenue Growth",
+              "nativeQueryRef": "% Revenue Growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "# Transactions"
+                }
+              },
+              "queryRef": "Measures Table.# Transactions",
+              "nativeQueryRef": "# Transactions"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "# LY Transactions"
+                }
+              },
+              "queryRef": "Measures Table.# LY Transactions",
+              "nativeQueryRef": "# LY Transactions"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Transactions Growth"
+                }
+              },
+              "queryRef": "Measures Table.% Transactions Growth",
+              "nativeQueryRef": "% Transactions Growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ Basket Size"
+                }
+              },
+              "queryRef": "Measures Table.$ Basket Size",
+              "nativeQueryRef": "$ Basket Size"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ LY Basket Size"
+                }
+              },
+              "queryRef": "Measures Table.$ LY Basket Size",
+              "nativeQueryRef": "$ LY Basket Size"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Basket Value Growth"
+                }
+              },
+              "queryRef": "Measures Table.% Basket Value Growth",
+              "nativeQueryRef": "% Basket Value Growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ Average RSP"
+                }
+              },
+              "queryRef": "Measures Table.$ Average RSP",
+              "nativeQueryRef": "$ Average RSP"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "$ LY Average RSP"
+                }
+              },
+              "queryRef": "Measures Table.$ LY Average RSP",
+              "nativeQueryRef": "$ LY Average RSP"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "% Average RSP Growth"
+                }
+              },
+              "queryRef": "Measures Table.% Average RSP Growth",
+              "nativeQueryRef": "% Average RSP Growth"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#CCCCCC'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Revenue Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E01F29'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Revenue Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#21A544'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Revenue Growth"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Transactions Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#21A544'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Transactions Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E01F29'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Transactions Growth"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Basket Value Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#21A544'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Basket Value Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E01F29'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Basket Value Growth"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Average RSP Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#21A544'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Measures Table"
+                                    }
+                                  },
+                                  "Property": "% Average RSP Growth"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E01F29'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Measures Table.% Average RSP Growth"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "119.72587381188131D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Ach (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "118D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Target (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "162D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Online Orders.ECOMM Order Type"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "195D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Online Orders.ECOMM Channel Source"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleValues": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Revenue"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ LY Revenue"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleValues": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Revenue Growth"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Ach (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Target (Target Stores)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.# Transactions"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.# LY Transactions"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Transactions Growth"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Basket Size"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ LY Basket Size"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Basket Value Growth"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ Average RSP"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.$ LY Average RSP"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures Table.% Average RSP Growth"
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tabular'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "perRowLevel": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "applyToHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Row"
+          }
+        }
+      ],
+      "rowTotal": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            },
+            "applyToHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnTotal": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EAF1EF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Table'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "spacing": [
+        {
+          "properties": {
+            "verticalSpacing": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "bf3aeeeed132f73ec48e",
+        "ordinal": 0,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "# LY Transactions"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "12616963e000276c2afc",
+        "ordinal": 1,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "# Transactions"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e761eb461bae322fe9f7",
+        "ordinal": 2,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "% Average RSP Growth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fff1b5361f616ae32180",
+        "ordinal": 3,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "% Basket Value Growth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "00cf28fa19e632e0dd19",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Hour"
+              }
+            },
+            "Property": "Hour ID"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "h",
+              "Entity": "Hour",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 3,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "h"
+                        }
+                      },
+                      "Property": "Hour ID"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "30L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      },
+      {
+        "name": "3d48c01d40a128a395dc",
+        "ordinal": 5,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "% Revenue Growth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bc26a9e41fac69151164",
+        "ordinal": 6,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "% Transactions Growth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "1aae7d71eb6cb1e72aea",
+        "ordinal": 7,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "$ Average RSP"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "45ec72e89d2f23fe65d5",
+        "ordinal": 8,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "$ Basket Size"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c15b86aa6c6c919033bf",
+        "ordinal": 9,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "$ LY Average RSP"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b9074c13dd9823fdba2f",
+        "ordinal": 10,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "$ LY Basket Size"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "17bc21f60cc6e89f8a90",
+        "ordinal": 11,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "$ LY Revenue"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "87d19a087feefbddf017",
+        "ordinal": 12,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "$ Revenue"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "Filter89a4f1f19b74aade583e",
+        "ordinal": 13,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Attribute Field Parameter"
+              }
+            },
+            "Property": "Attributes"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Attribute Field Parameter",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "a"
+                          }
+                        },
+                        "Property": "Attributes Fields"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Division]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Stores''[Store Region]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Insurance''[Insurance Availed]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Private or Brand]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Online Shipment Type''[Omni Type]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Department]'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'''Product''[Item Main Category]'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              },
+              "Annotations": {
+                "filterExpressionMetadata": {
+                  "expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Attribute Field Parameter"
+                          }
+                        },
+                        "Property": "Attributes"
+                      }
+                    }
+                  ],
+                  "decomposedIdentities": {
+                    "values": [
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Division]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Stores''[Store Region]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Insurance''[Insurance Availed]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Private or Brand]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Online Shipment Type''[Omni Type]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Department]'"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "0": [
+                            {
+                              "Literal": {
+                                "Value": "'''Product''[Item Main Category]'"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    ],
+                    "columns": [
+                      {
+                        "value": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Attribute Field Parameter"
+                              }
+                            },
+                            "Property": "Attributes Fields"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "valueMap": [
+                    {
+                      "0": "Division"
+                    },
+                    {
+                      "0": "Region"
+                    },
+                    {
+                      "0": "Ins/Non Ins"
+                    },
+                    {
+                      "0": "Private Or Brand"
+                    },
+                    {
+                      "0": "Omni Type"
+                    },
+                    {
+                      "0": "Department"
+                    },
+                    {
+                      "0": "Category"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isLockedInViewMode": true
+      },
+      {
+        "name": "5adbf29440556a007e87",
+        "ordinal": 14,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Division"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "p",
+              "Entity": "Product",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "p"
+                              }
+                            },
+                            "Property": "Item Division"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

@@ -1,0 +1,3060 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Show Filters Sales",
+  "name": "defd0b45eaa160dd2628",
+  "options": {
+    "targetVisualNames": [],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.11",
+    "activeSection": "8f5df3e31a9b7a6cbe75",
+    "filters": {
+      "byName": {
+        "da42ae80de672da6a0ce": {
+          "name": "da42ae80de672da6a0ce",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "d",
+                "Entity": "Date",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "In": {
+                    "Expressions": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "d"
+                            }
+                          },
+                          "Property": "Future Dates Hidden"
+                        }
+                      }
+                    ],
+                    "Values": [
+                      [
+                        {
+                          "Literal": {
+                            "Value": "'True'"
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Date"
+                }
+              },
+              "Property": "Future Dates Hidden"
+            }
+          },
+          "howCreated": 1
+        }
+      },
+      "byExpr": [
+        {
+          "name": "98d872e30db7b1e2c065",
+          "type": "RelativeDate",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "d",
+                "Entity": "Date",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "Date"
+                      }
+                    },
+                    "Right": {
+                      "DateSpan": {
+                        "Expression": {
+                          "Now": {}
+                        },
+                        "TimeUnit": 3
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Date"
+                }
+              },
+              "Property": "Date"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "118059265cfefacbd6b1",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Product"
+                }
+              },
+              "Property": "Item Division"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "1b1a99265a03748295e7",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Product"
+                }
+              },
+              "Property": "Item Department"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "1c0252f32d60a3b75f11",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Product"
+                }
+              },
+              "Property": "Item Main Category"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "8f5df3e31a9b7a6cbe75": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "afdf80f07120bdd664e7",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "Stores",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "Country Global"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Global'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'KSA'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Stores"
+                    }
+                  },
+                  "Property": "Country Global"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {
+          "c08467aa89a14087de57": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "342fcd81ea65726c6047",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9d43da2898d430773b15",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "30fc77d170ab6072965e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c7b9bc1250b0b47c9b40",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ LY Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ddbe9dfdd4d7d59880c0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Revenue Growth"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e3b4b6b7ab4bda019a9a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Ach (Target Category)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineClusteredColumnComboChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b049ef3599e574436eb4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ce237eca88c03a5c6348",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "80e9987fdb009a694315",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8c93b48167d00c0018ad",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Revenue Growth"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0a9d048e7b9e9a52604a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Ach (Target Category)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Year"
+                    }
+                  },
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "da9a63c688172d094d31": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d587aec597a90d70ad26",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7dd56c6031b3e6ab901b",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "aa6ae5a31e7a1c21a790",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d695d7ff1373c6eae730",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ LY Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "bbfd2fe31e2228ae002d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Revenue Growth"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6100a9f2203edd40b195",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Ach (Target Category)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineClusteredColumnComboChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Hierarchy": "Calendar"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8c61f5a2b86130090201": {
+            "filters": {
+              "byName": {
+                "173a3713e4e58ce1bc60": {
+                  "name": "173a3713e4e58ce1bc60",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "a",
+                        "Entity": "Attribute Field Parameter",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "a"
+                                    }
+                                  },
+                                  "Property": "Attributes Fields"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Product''[Item Division]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Stores''[Store Region]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Insurance''[Insurance Availed]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Product''[Private or Brand]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Online Shipment Type''[Omni Type]'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Attribute Field Parameter"
+                        }
+                      },
+                      "Property": "Attributes"
+                    }
+                  },
+                  "howCreated": 0,
+                  "cachedDisplayNames": [
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Product''[Item Division]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Division"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Stores''[Store Region]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Region"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Insurance''[Insurance Availed]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Ins/Non Ins"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Product''[Private or Brand]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Private Or Brand"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Online Shipment Type''[Omni Type]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Omni Type"
+                    }
+                  ]
+                }
+              }
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "a",
+                                "Entity": "Attribute Field Parameter",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "a"
+                                            }
+                                          },
+                                          "Property": "Attributes Fields"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'''Product''[Item Division]'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "cachedFilterDisplayItems": [
+                {
+                  "id": {
+                    "scopeId": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Attribute Field Parameter"
+                              }
+                            },
+                            "Property": "Attributes Fields"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "'''Product''[Item Division]'"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "displayName": "Division"
+                }
+              ]
+            }
+          },
+          "0878b2bf899d9089560d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "7de88ce52b0e439db49e": {
+            "filters": {
+              "byName": {
+                "Filter89a4f1f19b74aade583e": {
+                  "name": "Filter89a4f1f19b74aade583e",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "a",
+                        "Entity": "Attribute Field Parameter",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "a"
+                                    }
+                                  },
+                                  "Property": "Attributes Fields"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Product''[Item Division]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Stores''[Store Region]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Insurance''[Insurance Availed]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Online Shipment Type''[Omni Type]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Product''[Private or Brand]'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Attribute Field Parameter"
+                        }
+                      },
+                      "Property": "Attributes"
+                    }
+                  },
+                  "howCreated": 1,
+                  "cachedDisplayNames": [
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Product''[Item Division]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Division"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Stores''[Store Region]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Region"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Insurance''[Insurance Availed]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Ins/Non Ins"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Online Shipment Type''[Omni Type]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Omni Type"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Product''[Private or Brand]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Private Or Brand"
+                    }
+                  ]
+                }
+              },
+              "byExpr": [
+                {
+                  "name": "1ac5957b893153e8b95e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9bf67e169073b89453e1",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ MTD Merchandizing Target"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0217978f08908a459745",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a50a4898819403dd2357",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ LY Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4809d1666373dcbc8d2e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue(Smart List)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5a10c4f12b11dd630533",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Revenue Growth"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1a91843834548d09b712",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Private & Imported)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "25471d9bd91473a719ad",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Target(Store/Cat)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "896834ef7c093a9a78d7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Ach(Store/Cat)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7f21c0a07a7bbe626c8e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "# Transactions"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Target(Store/Cat)"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  }
+                ]
+              },
+              "projections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  }
+                ],
+                "Values": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "# Transactions"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ MTD Merchandizing Target"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Target(Store/Cat)"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ LY Revenue"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue(Smart List)"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Private & Imported)"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Ach(Store/Cat)"
+                    }
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Revenue Growth"
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "Rows": [
+                  {
+                    "expr": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Attribute Field Parameter"
+                          }
+                        },
+                        "Property": "Attributes"
+                      }
+                    },
+                    "index": 0,
+                    "length": 1
+                  }
+                ]
+              }
+            }
+          },
+          "fc9513a530dded8e818c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bac775a17024d9756709",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "4d4a96cee0107c580a6b": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "87903c727965d070aa0e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9418a69fd6873ee16e89",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e64a16dbd3b72a1d35aa": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "67236d60a9d084d1e73a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6a25b033bc1b80700597": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ded58a215e13ebcc489c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Ach (Target Category)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Ach (Target Category)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "2f237c3e18d4e5c2ac83": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "1b1013da37000b123cd5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Promo Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Promo Revenue"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e522f654b84376d6383c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f72841b12590b3ca893d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Private & Imported)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Private & Imported)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c27b15d83547da996889": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8005d04616bd2890e975",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Insurance)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Insurance)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "9c17e371918230349431": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "56e8fdb8b277300238b9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Online)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue (Online)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "4e926694ccebc20b203b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "466c0118c1340b50a546",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "# Transactions"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "# Transactions"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f149962add01353c0926": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "0a9362de00d8ce9d985c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "47cfd818daad203dd4a9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "# Transactions"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "# Transactions"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "23c5091472a16120ea39": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "919666a0b40806051d33",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8afb2eda161378e9ba15",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Basket Value Growth"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "69fc594257064070bb94",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "92d002a0d170b22437c2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Transactions Growth"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a80a313521a34045a20a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Revenue Growth"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "scatterChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  }
+                ],
+                "X": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "% Transactions Growth"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "bac496a7cc3645509568": {
+            "singleVisual": {
+              "visualType": "pageNavigator",
+              "objects": {}
+            }
+          },
+          "1b88d3f20833c2a7b0cb": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "6c89e03b923dbc216ec1": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "642d075d3c2e16b8e584": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8d54e0a5f004d7e2eff0",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "Product",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "Item Department"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Department"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "23ae672632c0c07e1e41",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Private or Brand"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Private or Brand"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5bb45301d0ea9409e24a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f23d34f570b71024f61b",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "Product",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "Item Main Category"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Main Category"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "a20617712dbcea665502",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Insurance"
+                        }
+                      },
+                      "Property": "Insurance Availed"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Insurance"
+                        }
+                      },
+                      "Property": "Insurance Availed"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "2fd8060d0000cdced421": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "58df7aa5cdb69d6a1ed3",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "Product",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "Item Division"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "710d479a71deb4465aa0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8d54e0a5f004d7e2eff0",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "Product",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "Item Department"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Department"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "0294ed281c0760852107",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Stores"
+                        }
+                      },
+                      "Property": "Store Region"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Stores"
+                        }
+                      },
+                      "Property": "Store Region"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "06e5726b6201b0a32e5a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8d54e0a5f004d7e2eff0",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "Product",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "Item Department"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Department"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "e4090d5131826c5c0cbc",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Online Shipment Type"
+                        }
+                      },
+                      "Property": "Omni Type"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Online Shipment Type"
+                        }
+                      },
+                      "Property": "Omni Type"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f01eef8f310ea0e3b326": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "809c5451b5ebccacc0db": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8d54e0a5f004d7e2eff0",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "Product",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "Item Department"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Department"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "2a7a539d27898a4d4378",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Stores"
+                        }
+                      },
+                      "Property": "Country Global"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Stores"
+                        }
+                      },
+                      "Property": "Country Global"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "138c7504a4b858708d05": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "e4c2913a671a05bad76a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "013d203e7b312aa81a93": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9e0ed6ab0d60272d8457",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e48029406ea0768037ce",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  }
+                ]
+              },
+              "projections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Property": "Item Division"
+                    }
+                  }
+                ],
+                "Y": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Measures Table"
+                        }
+                      },
+                      "Property": "$ Revenue"
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "Category": [
+                  {
+                    "expr": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Attribute Field Parameter"
+                          }
+                        },
+                        "Property": "Attributes"
+                      }
+                    },
+                    "index": 0,
+                    "length": 1
+                  }
+                ]
+              }
+            }
+          },
+          "ac8ce02254581bdd0054": {
+            "filters": {
+              "byName": {
+                "173a3713e4e58ce1bc60": {
+                  "name": "173a3713e4e58ce1bc60",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "a",
+                        "Entity": "Attribute Field Parameter",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "a"
+                                    }
+                                  },
+                                  "Property": "Attributes Fields"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Product''[Item Division]'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'''Stores''[Store Region]'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Attribute Field Parameter"
+                        }
+                      },
+                      "Property": "Attributes"
+                    }
+                  },
+                  "howCreated": 0,
+                  "cachedDisplayNames": [
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Product''[Item Division]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Division"
+                    },
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Attribute Field Parameter"
+                                  }
+                                },
+                                "Property": "Attributes Fields"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'''Stores''[Store Region]'"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "Region"
+                    }
+                  ]
+                }
+              }
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "a",
+                                "Entity": "Attribute Field Parameter",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "a"
+                                            }
+                                          },
+                                          "Property": "Attributes Fields"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'''Product''[Item Division]'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "cachedFilterDisplayItems": [
+                {
+                  "id": {
+                    "scopeId": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Attribute Field Parameter"
+                              }
+                            },
+                            "Property": "Attributes Fields"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "'''Product''[Item Division]'"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "displayName": "Division"
+                }
+              ]
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "9db9ab68ad79a70e2834": {
+            "children": {
+              "61795a424315d0a61245": {
+                "isHidden": false
+              }
+            }
+          },
+          "2f589b8679a60d661c08": {
+            "isHidden": false
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

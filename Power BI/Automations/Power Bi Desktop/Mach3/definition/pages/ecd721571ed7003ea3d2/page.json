@@ -1,0 +1,231 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "ecd721571ed7003ea3d2",
+  "displayName": "Online",
+  "displayOption": "FitToPage",
+  "height": 1021,
+  "width": 1700,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "423b957451ebb04d2b20",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Country"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Stores",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Country"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'KSA'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'DC Fulfilment'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "85eaf6f9e00ee2081b55",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Item Country Code"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "p",
+              "Entity": "Product",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "p"
+                          }
+                        },
+                        "Property": "Item Country Code"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'KSA'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      }
+    ]
+  },
+  "objects": {
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "border": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "backgroundColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F5F7'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "b3f06f1b00b63bf1d19c",
+      "target": "0a356037013601c974a0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9ecb5481ee0c825b0d1d",
+      "target": "b3f06f1b00b63bf1d19c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9ecb5481ee0c825b0d1d",
+      "target": "e52d814241120121946f",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b3f06f1b00b63bf1d19c",
+      "target": "9ecb5481ee0c825b0d1d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b3f06f1b00b63bf1d19c",
+      "target": "2ad556b140dc4f38e7d8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "11d6cd67c08c2394da85",
+      "target": "587bd619b84ecd565803",
+      "type": "NoFilter"
+    },
+    {
+      "source": "11d6cd67c08c2394da85",
+      "target": "1cca74e87a80810d1581",
+      "type": "NoFilter"
+    }
+  ]
+}

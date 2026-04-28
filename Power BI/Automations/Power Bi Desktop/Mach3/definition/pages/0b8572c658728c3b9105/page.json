@@ -1,0 +1,172 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "0b8572c658728c3b9105",
+  "displayName": "Promo",
+  "displayOption": "FitToPage",
+  "height": 1100,
+  "width": 1700,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "28a3a9f7bc56cfcc1f5e",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Country"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Stores",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Country"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'KSA'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'DC Fulfilment'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "border": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "backgroundColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F5F7'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "5031df7c69158a778870",
+      "target": "151624c955a883b990dc",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5031df7c69158a778870",
+      "target": "db9cb52ee7f3a4213e85",
+      "type": "NoFilter"
+    },
+    {
+      "source": "151624c955a883b990dc",
+      "target": "5031df7c69158a778870",
+      "type": "NoFilter"
+    },
+    {
+      "source": "151624c955a883b990dc",
+      "target": "b194a199029ca1b1abff",
+      "type": "NoFilter"
+    },
+    {
+      "source": "27982122e60667078c87",
+      "target": "dc3620f472ede9e6957a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "27982122e60667078c87",
+      "target": "78997617005b1796801c",
+      "type": "NoFilter"
+    }
+  ]
+}

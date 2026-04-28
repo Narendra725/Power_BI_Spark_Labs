@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json",
+  "items": [
+    {
+      "name": "0cd48751d6fb82b8325d",
+      "displayName": "Promo Tops",
+      "children": [
+        "d812e04129c358c9e9ae",
+        "231d6be9a9ce8129e9e1"
+      ]
+    },
+    {
+      "name": "defd0b45eaa160dd2628"
+    },
+    {
+      "name": "ab0a7a39e96dae63200c"
+    },
+    {
+      "name": "41a4dd8390d013c2b289"
+    },
+    {
+      "name": "6c1a242a31167863b1e4"
+    },
+    {
+      "name": "9a64abf8a9dde13d4057"
+    },
+    {
+      "name": "595ae7f2921bc51cb4a6"
+    },
+    {
+      "name": "e01eecda4034bbe2104c"
+    },
+    {
+      "name": "793e27414cd27eb46d6a"
+    },
+    {
+      "name": "ec0976c85b1e4dead050"
+    },
+    {
+      "name": "56fbf99d4ce7862a0705"
+    },
+    {
+      "name": "a5330f6f0a233016cd79"
+    },
+    {
+      "name": "af8f519bdbbd51b4a03a"
+    },
+    {
+      "name": "1fe6d9ed1ce4e64e7b4a"
+    },
+    {
+      "name": "3d7b4165a4532ea34a1b"
+    },
+    {
+      "name": "5214773fe68b065a0dda"
+    },
+    {
+      "name": "95a77a16420ba7ad7e03"
+    },
+    {
+      "name": "a55f32ac0c0e71b89000"
+    },
+    {
+      "name": "60e9829b038cd7c1a76c"
+    },
+    {
+      "name": "776a215db08568543215"
+    },
+    {
+      "name": "de3a2c96c7b4d1097b4a"
+    },
+    {
+      "name": "3081b50dab41cd689d86"
+    },
+    {
+      "name": "4cc0314d880280663807"
+    },
+    {
+      "name": "c57f7fe4dac90490ca42"
+    },
+    {
+      "name": "7313d890147207137805"
+    }
+  ]
+}

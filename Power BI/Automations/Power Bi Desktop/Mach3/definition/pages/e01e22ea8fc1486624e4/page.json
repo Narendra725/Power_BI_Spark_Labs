@@ -1,0 +1,268 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "e01e22ea8fc1486624e4",
+  "displayName": "Units",
+  "displayOption": "FitToPage",
+  "height": 1004,
+  "width": 1800,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "7092079a8078dd7702d9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "ff299d6488d8883db5ad",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Area Manager Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "8e7b9a7a123a5bc39a7b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Country Global"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Stores",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Country Global"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Global'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'KSA'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isLockedInViewMode": true
+      },
+      {
+        "name": "c119b936517b0735064c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store City"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "dc7e8fa1baea831e4d50",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store Class ID"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "59925ef4602849143019",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Store Region"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "0f3bd40c688320a13085",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Supervisor Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
+  },
+  "objects": {
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "border": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "backgroundColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F5F7'"
+                  }
+                }
+              }
+            }
+          },
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "206L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "4ea216a7582010237c4c",
+      "target": "094850fb62996996bbf9",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4ea216a7582010237c4c",
+      "target": "1dec66fe7b2b61e73d16",
+      "type": "NoFilter"
+    },
+    {
+      "source": "094850fb62996996bbf9",
+      "target": "4ea216a7582010237c4c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "094850fb62996996bbf9",
+      "target": "5250a9ea5a4d1eb91bd6",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70b6399472e2b0c6710d",
+      "target": "b001486c47818c086457",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70b6399472e2b0c6710d",
+      "target": "ee7050acfddd8fc90f2b",
+      "type": "NoFilter"
+    }
+  ]
+}

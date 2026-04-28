@@ -1,0 +1,184 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "4acdeb112c1f82d46871",
+  "displayName": "Insurance",
+  "displayOption": "FitToPage",
+  "height": 1021,
+  "width": 1700,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "005e98e0f10428fe20b1",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Stores"
+              }
+            },
+            "Property": "Country"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Stores",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Country"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'DC Fulfilment'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'KSA'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
+        }
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "border": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "backgroundColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F5F7'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "8b81a6255288745d04a5",
+      "target": "5183e01429de2277a766",
+      "type": "NoFilter"
+    },
+    {
+      "source": "8b81a6255288745d04a5",
+      "target": "aa2370c4ff7304a7d49a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5183e01429de2277a766",
+      "target": "8b81a6255288745d04a5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5183e01429de2277a766",
+      "target": "581ab4f1b9fd9b8a3ce7",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c5b0c16b0b798ea6dd1a",
+      "target": "c671451089026ccbad50",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c5b0c16b0b798ea6dd1a",
+      "target": "e1fab3e2007e065a8a09",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c5b0c16b0b798ea6dd1a",
+      "target": "327ad43f79e711522cd7",
+      "type": "NoFilter"
+    }
+  ]
+}
