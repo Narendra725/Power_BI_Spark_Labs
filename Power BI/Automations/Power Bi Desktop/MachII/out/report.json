@@ -1,0 +1,72 @@
+{
+  "$schema": "sample_value",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "Sample Name",
+      "reportVersionAtImport": {
+        "page": "sample_value",
+        "report": "sample_value",
+        "visual": "sample_value"
+      },
+      "type": null
+    },
+    "customTheme": {
+      "name": "Sample Name",
+      "reportVersionAtImport": {
+        "page": "sample_value",
+        "report": "sample_value",
+        "visual": "sample_value"
+      },
+      "type": null
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Sample Name",
+        "displayName": "Sample Name",
+        "ordinal": 3.14
+      }
+    ],
+    "filterSortOrder": null
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": null,
+          "visible": null
+        },
+        "selector": {
+          "data": [
+            {
+              "scopeId": null,
+              "wildcard": [
+                null
+              ]
+            }
+          ],
+          "metadata": "sample_value"
+        }
+      }
+    ],
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": null
+        },
+        "selector": {
+          "data": [
+            {
+              "scopeId": null,
+              "wildcard": [
+                null
+              ]
+            }
+          ],
+          "metadata": "sample_value"
+        }
+      }
+    ]
+  }
+}
